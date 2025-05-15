@@ -69,4 +69,7 @@ dependencies {
     //LiveData
     implementation("androidx.lifecycle:lifecycle-livedata:2.9.0")
     implementation("androidx.compose.runtime:runtime-livedata:1.8.1")
+
+    //Room
+
 }
