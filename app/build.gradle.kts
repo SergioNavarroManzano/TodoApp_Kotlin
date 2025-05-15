@@ -48,8 +48,7 @@ dependencies {
     implementation(libs.androidx.activity.compose)
 
 
-    implementation("com.google.dagger:hilt-android:2.56.2")
-    ksp("com.google.dagger:hilt-compiler:2.56.2")
+
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
@@ -62,4 +61,12 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.56.2")
+    ksp("com.google.dagger:hilt-compiler:2.56.2")
+
+    //LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata:2.9.0")
+    implementation("androidx.compose.runtime:runtime-livedata:1.8.1")
 }
